@@ -6,18 +6,18 @@ class Config(object):
     # pyro client config
     API_ID    = os.environ.get("API_ID", 7414019)
     API_HASH  = os.environ.get("API_HASH", "d463ed3d695f5cd4164029405ad8388e")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7002766817:AAEdONAdUfyXzJFzn9GLKQrB4DhajP09T4U")
    
     # database config
-    DB_NAME = os.environ.get("DB_NAME","Zoro")
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","filesharexbot")
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://arno:MRpH8ZZhu4At4vXw@cluster0.8seupfa.mongodb.net/?retryWrites=true&w=majority")
  
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://telegra.ph/file/0624f0e874718a066a3f6.mp4")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1350488685 6294805935').split()]
-    FORCE_SUB_1 = os.environ.get("FORCE_SUB_1", "EdgeBotSupport")
-    FORCE_SUB_2 = os.environ.get("FORCE_SUB_2", "EdgeBots")
+    FORCE_SUB_1 = os.environ.get("FORCE_SUB_1", "anime_eternity")
+    FORCE_SUB_2 = os.environ.get("FORCE_SUB_2", "Shingeki_no_Kyojin_English")
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", -1001863937035))
     DUMP_CHANNEL = int(os.environ.get("DUMP_CHANNEL", "-1002131803512"))
 
