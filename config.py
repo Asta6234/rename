@@ -15,11 +15,11 @@ class Config(object):
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://telegra.ph/file/0624f0e874718a066a3f6.mp4")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1350488685 6294805935').split()]
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1347137252 7533047591').split()]
     FORCE_SUB_1 = os.environ.get("FORCE_SUB_1", "anime_eternity")
     FORCE_SUB_2 = os.environ.get("FORCE_SUB_2", "Shingeki_no_Kyojin_English")
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", -1001863937035))
-    DUMP_CHANNEL = int(os.environ.get("DUMP_CHANNEL", "-1002131803512"))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002352178558"))
+    DUMP_CHANNEL = int(os.environ.get("DUMP_CHANNEL", "-1002253111810"))
 
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", True))
